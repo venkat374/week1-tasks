@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First Styled Page</title>
+    <style>
+        body {
+            font-family: sans-serif; /* A simple sans-serif font */
+            background-color: #d0f014; /* Light yellowish-green */
+            margin: 20px; /* Add some margin around the page */
+            color: #333; /* Dark gray text */
+        }
+
+        .container {
+            background-color: #f8f8ff; /* Very light gray/off-white */
+            padding: 20px;
+            border: 1px solid #ccc; /* Light gray border */
+            display: flex; /* For the sidebar and main content layout */
+        }
+
+        .sidebar {
+            width: 150px;
+            padding-right: 20px;
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 8px 10px;
+            text-decoration: none;
+            color: #000; /* Black links */
+            background-color: #e0ffff; /* Light cyan */
+            border: 1px solid #b0e0e6; /* Light blue border */
+        }
+
+        .sidebar a:hover {
+            background-color: #add8e6; /* Light blue on hover */
+        }
+
+        .main-content {
+            flex-grow: 1; /* Takes up the remaining space */
+            padding-left: 20px;
+            border-left: 1px solid #ccc; /* Separator line */
+        }
+
+        h1 {
+            color: #800080; /* Purple heading */
+            font-size: 2em;
+            margin-top: 0;
+        }
+
+        p {
+            line-height: 1.5;
+            margin-bottom: 15px;
+        }
+
+        .footer {
+            margin-top: 30px;
+            font-size: 0.8em;
+            color: #555;
+            text-align: left; /* Align footer text to the left */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <ul>
+                <li><a href="#">Home page</a></li>
+                <li><a href="#">Musings</a></li>
+                <li><a href="#">My town</a></li>
+                <li><a href="#">Links</a></li>
+            </ul>
+        </div>
+        <div class="main-content">
+            <h1>My first styled page</h1>
+            <p>Welcome to my styled page!</p>
+            <p>It lacks images, but at least it has style. And it has links, even if they don't go anywhere...</p>
+            <p>There should be more here, but I don't know what yet.</p>
+            <div class="footer">
+                <p>Made 5 April 2077<br>by Batman.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
